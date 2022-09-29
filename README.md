@@ -27,12 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Design](/screenshots/desktop.png)
+![Mobile Design](/screenshots/mobile.png)
+![iPhone12 Design](/screenshots/iPhone12.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link to the solution](https://github.com/dogukan0055/product-preview-card)
+- Live Site URL: [Link to the live site](https://dogukan0055.github.io/product-preview-card/)
 
 ## My process
 
@@ -41,51 +43,87 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Responsive design
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<header>
+  <h1>Gabrielle Essence Eau De Parfum</h1>
+  <h2>PERFUME</h2>
+</header>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media (hover: hover) {
+  button:hover {
+    background-color: rgb(1, 73, 73);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    height: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 340px;
+    height: 600px;
+    padding-right: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+    height: 250px;
+  }
+
+  .card-inline {
+    width: 100%;
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: small;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-block-end: 1rem;
+    margin-block-start: 0;
+  }
+
+  h1 {
+    max-width: 400px;
+  }
+
+  p {
+    max-width: 264px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'm still not very comfortable with mobile designs and I definitely need to improve my coding skills in some ways. Gotta get used to media queries.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Youtube](https://www.youtube.com/watch?v=aoB6cloAB1E&ab_channel=LearnSomething) - I've watched it to get some tips and how to plan layout and stuff. Every one has it's own methods, but this guy helped me a lot so I have to give his credits.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Doğukan ŞIHMAN](https://dogukansportfolio.w3spaces.com/)
+- Frontend Mentor - [@dogukan0055](https://www.frontendmentor.io/profile/dogukan0055)
+- Twitter - [@bedavatekme](https://www.twitter.com/bedavatekme)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Like I said above, YouTube and of course FrontEndMentor helped a lot during this journey. But it's not just about watching and learning, you need to practice these skills. So just try to code, try to think, try to write something. That's all I can say I guess.
